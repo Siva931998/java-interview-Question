@@ -1,5 +1,6 @@
 package src;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class VowelsFinder {
         List<Character> VowelString = Arrays.asList('a','e','i','o','u');
 
         long countofvowels = lowercaseString.chars().mapToObj(c -> (char) c).filter(VowelString::contains).count();
-
+        System.out.println(inputString);
         System.out.println(countofvowels);
 
 
